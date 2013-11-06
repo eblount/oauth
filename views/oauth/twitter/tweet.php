@@ -1,13 +1,13 @@
-<?php echo FORM::open() ?>
+<?php echo Form::open() ?>
 
 <dl>
-	<dt><?php echo FORM::label('tweet', 'Update Twitter Status?') ?></dt>
-	<dd><?php echo FORM::textarea('tweet', $tweet) ?></dd>
+	<dt><?php echo Form::label('tweet', 'Update Twitter Status?') ?></dt>
+	<dd><?php echo Form::textarea('tweet', $tweet) ?></dd>
 </dl>
 
-<?php echo FORM::submit(NULL, 'Send') ?>
+<?php echo Form::submit(NULL, 'Send') ?>
 
-<?php echo FORM::close() ?>
+<?php echo Form::close() ?>
 
 <?php if ($response): ?>
 <p>Response from Twitter:</p>
